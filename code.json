@@ -10,13 +10,13 @@
       "licenses": [
         {
           "name": "Public Domain, CC0-1.0",
-          "URL": "https://code.usgs.gov/sas/sdm/globus/data-schema-model-scratchspace/-/raw/main/LICENSE.md"
+          "URL": "https://raw.githubusercontent.com/DOI-USGS/horizon-datamodel/refs/heads/main/LICENSE.md"
         }
       ]
     },
     "homepageURL": "https://github.com/DOI-USGS/horizon-datamodel",
-    "downloadURL": "",
-    "disclaimerURL": "https://github.com/DOI-USGS/horizon-datamodel/-/raw/main/DISCLAIMER.md",
+    "downloadURL": "https://github.com/DOI-USGS/horizon-datamodel/archive/refs/heads/main.zip",
+    "disclaimerURL": "https://raw.githubusercontent.com/DOI-USGS/horizon-datamodel/refs/heads/main/DISCLAIMER.md",
     "repositoryURL": "https://github.com/DOI-USGS/horizon-datamodel.git",
     "vcs": "git",
     "laborHours": 100,
