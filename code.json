@@ -1,0 +1,39 @@
+[
+  {
+    "name": "horizon-datamodel",
+    "organization": "U.S. Geological Survey",
+    "description": "This project contains the metadata schema component that supports the Horizon project. Metadata are stored as JSON files.",
+    "version": "main",
+    "status": "Development",
+    "permissions": {
+      "usageType": "openSource",
+      "licenses": [
+        {
+          "name": "Public Domain, CC0-1.0",
+          "URL": "https://code.usgs.gov/sas/sdm/globus/data-schema-model-scratchspace/-/raw/main/LICENSE.md"
+        }
+      ]
+    },
+    "homepageURL": "https://github.com/DOI-USGS/horizon-datamodel",
+    "downloadURL": "",
+    "disclaimerURL": "https://github.com/DOI-USGS/horizon-datamodel/-/raw/main/DISCLAIMER.md",
+    "repositoryURL": "https://github.com/DOI-USGS/horizon-datamodel.git",
+    "vcs": "git",
+    "laborHours": 100,
+    "tags": [
+      "USGS",
+      "usgs_ma|Core Science Systems",
+      "usgs_sc|Science Analytics and Synthesis"
+    ],
+    "languages": [
+      "python"
+    ],
+    "contact": {
+      "name": "Brandon Serna",
+      "email": "bserna@usgs.gov"
+    },
+    "date": {
+      "metadataLastUpdated": "2025-02-05"
+    }
+  }
+]
