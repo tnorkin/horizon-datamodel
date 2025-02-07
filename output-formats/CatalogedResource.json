@@ -1,0 +1,79 @@
+{
+  "$defs": {
+    "AccessRightsEnum": {
+      "enum": [
+        "Public",
+        "Non Public"
+      ],
+      "title": "AccessRightsEnum",
+      "type": "string"
+    },
+    "UsgsAssetTypeEnum": {
+      "enum": [
+        "Data",
+        "Model",
+        "Publication",
+        "Software"
+      ],
+      "title": "UsgsAssetTypeEnum",
+      "type": "string"
+    }
+  },
+  "description": "Basic metadata schema for a cataloged resource.\n\nFields\n------\ntitle: str\n    A name given to the resource.\nusgsAssetType: UsgsAssetTypeEnum\n    The type of asset cataloged: data, model, publication, software\ndescription: str\n    A free-text account of the resource.\nusgsCreated: datetime\n    Date and time that the resource's record was created in the catalog\nusgsModified: datetime\n    Date and time that the resource's record was last modified\nidentifier: Optional[HttpUrl]\n    A unique identifier of the resource being described or cataloged.\n    This identifier should be represented by a URI.\nusgsIdentifier: str\n    Identifier used to internally identify a resource within a particular system\naccessRights: AccessRightsEnum\n    Information about who can access the resource or an indication of its security status.",
+  "properties": {
+    "title": {
+      "title": "Title",
+      "type": "string"
+    },
+    "usgsAssetType": {
+      "$ref": "#/$defs/UsgsAssetTypeEnum"
+    },
+    "description": {
+      "title": "Description",
+      "type": "string"
+    },
+    "usgsCreated": {
+      "format": "date-time",
+      "title": "Usgscreated",
+      "type": "string"
+    },
+    "usgsModified": {
+      "format": "date-time",
+      "title": "Usgsmodified",
+      "type": "string"
+    },
+    "identifier": {
+      "anyOf": [
+        {
+          "format": "uri",
+          "maxLength": 2083,
+          "minLength": 1,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Identifier"
+    },
+    "usgsIdentifier": {
+      "title": "Usgsidentifier",
+      "type": "string"
+    },
+    "accessRights": {
+      "$ref": "#/$defs/AccessRightsEnum"
+    }
+  },
+  "required": [
+    "title",
+    "usgsAssetType",
+    "description",
+    "usgsCreated",
+    "usgsModified",
+    "identifier",
+    "usgsIdentifier",
+    "accessRights"
+  ],
+  "title": "CatalogedResource",
+  "type": "object"
+}
