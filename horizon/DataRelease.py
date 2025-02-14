@@ -1,5 +1,5 @@
 from enum import Enum
-from Dataset import Dataset
+from .Dataset import Dataset
 
 
 class StatusEnum(str, Enum):
